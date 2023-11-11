@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Quizz</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="question text"></div>
+            <button id="answer1" class="answer-btn text" onclick="selectAnswer('answer1')"></button>
+            <button id="answer2" class="answer-btn text" onclick="selectAnswer('answer2')"></button>
+            <button id="answer3" class="answer-btn text" onclick="selectAnswer('answer3')"></button>
+            <button id="answer4" class="answer-btn text" onclick="selectAnswer('answer4')"></button>
+            <button class="next text" onclick="nextQuestion()">Далее</button>
+            <button id="end-quiz" class="finish text" onclick="finishQuizz()">Завершить</button>
+        </div>
+        <div class="result">
+            <h1 class="result__title text">Result</h1>
+            <!-- <div class="result__question text">How are you?</div>
+            <ul class="result__list">
+                <li class="result__btn text">hello</li>
+                <li class="result__btn text">hello</li>
+                <li class="result__btn text">hello</li>
+                <li class="result__btn text">hello</li>
+            </ul> -->
+            <div class="text"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
